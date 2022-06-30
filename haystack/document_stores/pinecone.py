@@ -571,6 +571,7 @@ class PineconeDocumentStore(BaseDocumentStore):
         target_namespace: Optional[str] = "copy",
         batch_size: int = 32,
     ):
+        # this is a test
         index = index or self.index
         index = self._sanitize_index_name(index)
         if index not in self.pinecone_indexes:
